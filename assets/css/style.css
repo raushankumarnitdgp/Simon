@@ -66,3 +66,69 @@ body{
 	padding:15px 30px;
 	border-radius:10%;
 }
+
+
+.images
+{
+	border-radius:4%;		
+        width:75%;
+}
+
+
+.right1
+{
+	width:50%;	
+	float:left;
+	position:relative;
+}
+.right2
+{
+	width:50%;	
+	float:right;
+	position:relative;
+}
+
+
+.click2
+{
+	margin-top: 40px;
+	text-align:center;
+	border: 3px solid #D3D3D3;
+	padding:15px 30px;
+	border-radius:10%;
+}
+
+.fill1
+{
+  width:200px;
+  height:30px;
+  font-size:15px; 
+  border-radius:3px;
+  background-color:#D8D8D8;
+  opacity:0.9;
+}
+
+.textarea1
+{
+  margin-top:40px;
+  width:458px;
+  height:200px;
+  font-size:15px; 
+  border-radius:3px;
+  background-color:#D8D8D8;
+  opacity:0.9;
+}
+
+.contactus{
+ 	float:left;
+ 	display: inline-block;
+ }
+ 
+.address{
+ 	margin-right: 25px;
+ 	float:right;
+ 	display: inline-block;
+	font-weight: 650;
+	opacity: 0.7;
+}
+
