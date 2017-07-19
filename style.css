@@ -9,29 +9,28 @@
 .clr1
 {
     height: 80px;
-    width: 340px;
-    border-radius: 15px;
+    width: 412px;
+    /* border-radius: 15px; */
     position: absolute;
     background-color: coral;
     margin: 0 80px;
 }
 .clr2
 {
-    height: 340px;
+    height: 418px;
     width: 80px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     background-color: #5b50ff;
     position: absolute;
-    top: 88px;
+    top: 9px;
 }
-
 .clr3
 {
     left: 813px;
     top: 87px;
-    height: 340px;
+    height: 420px;
     width: 80px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     position: absolute;
     background-color: #ffd150;
 }
@@ -39,11 +38,11 @@
 .clr4
 {
     height: 80px;
-    width: 340px;
-    border-radius: 15px;
+    width: 412px;
+    /* border-radius: 15px; */
     position: absolute;
     background-color: #6bcc77;
-    margin: 0 80px;
+    margin: 0 0px;
     top: 427px;
 }
 
@@ -53,7 +52,7 @@
     left: 481px;
     height: 340px;
     width: 332px;
-    border-radius: 32px;
+    /* border-radius: 32px; */
     position: absolute;
     background-color: rgba(132, 144, 135, 0.88);
     text-align: left;
@@ -65,7 +64,6 @@
     color: #DC0D29;
     padding: 0px;
     font-size: 36;
-    height: 50px;
     width: 50px;
     background-color: #32050C;
     position: relative;
