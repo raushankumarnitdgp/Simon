@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script defer src="game.js"></script>
+        <audio id="Sgreen" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" preload="auto"></audio>
+        <audio id="Sred" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" preload="auto"></audio>
+        <audio id="Syellow" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" preload="auto"></audio>
+        <audio id="Sblue" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" preload="auto"></audio>
+        <audio id="Swrong" src="http://www.freesound.org/data/previews/331/331912_3248244-lq.mp3" preload="auto"></audio>
+
+    </head>
+    <div class="game">
+            <div class="clr1" id="red" style="background-color: coral;"></div>
+            <div class="clr2" id="blue" style="background-color: #5b50ff"></div>
+            <div class="clr3" id="yellow" style="background-color: #ffd150"></div>
+            <div class="clr4" id="green" style="background-color: #6bcc77"></div>
+            <div class="middle">
+                <p style="font-size: 45px;font-size: 45px;margin-left: 101px;">Simon</p>
+                <p> 
+                    <span>
+                        <span class="outTx" id="count"></span>
+                        <button type="button" class="btnSt" id="start"></button>
+                        <button type="button" class="strict" id="strict"></button>
+                    </span>
+                </p>
+
+                <p>
+                    <span style="margin-left: 22px;">
+                        COUNT         
+                    </span>
+                    <span style="margin-left: 62px;">
+                        START         
+                    </span>
+                    <span style="    margin-left: 58px;">
+                        STRICT         
+                    </span>
+                </p>
+
+
+
+
+                <br><br>
+                <p>
+                        <label class="switch" style="    margin-left: 134px;">
+                        <input type="checkbox" id="OnBtn">
+                        <span class="slider"></span>
+                        </label>
+                </p>
+            </div>
+    </div>
+    
+</html>
