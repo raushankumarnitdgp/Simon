@@ -206,7 +206,7 @@ document.getElementById("OnBtn").addEventListener("change", function(){
             else
             {
                 document.getElementById('Swrong').play();
-                document.getElementById("count").innerHTML="!!"
+                document.getElementById("count").innerHTML="!!";
                 if(strict_mode === true)
                 {
                     startGame();
