@@ -31,6 +31,7 @@ document.getElementById("OnBtn").addEventListener("change", function(){
                  reset();
                  document.getElementById("start").removeEventListener("click", fn);
                  document.getElementById("strict").removeEventListener("click", fs);
+		 document.getElementById("led").style.cssText="background-color: rgb(34, 34, 34)";
             }
             else
             {
@@ -81,6 +82,11 @@ document.getElementById("OnBtn").addEventListener("change", function(){
     function fs()
     {
         strict_mode=!strict_mode;
+	if(strict_mode===true)
+	  document.getElementById("led").style.cssText="background-color:red";
+	else
+	  document.getElementById("led").style.cssText="background-color: rgb(34, 34, 34)";
+        //change-led 
     }
 
     function fn(){
@@ -133,7 +139,7 @@ document.getElementById("OnBtn").addEventListener("change", function(){
     {
         reset();
         
-
+	document.getElementById("led").style.cssText="background-color: rgb(34, 34, 34)";
         if(on===false)
             return;
        
@@ -146,12 +152,11 @@ document.getElementById("OnBtn").addEventListener("change", function(){
         }
 
         document.getElementById("count").innerHTML=count;
-
         document.getElementById("red").addEventListener("click", fn1);
         document.getElementById("green").addEventListener("click", fn2 );
         document.getElementById("yellow").addEventListener("click", fn3);
         document.getElementById("blue").addEventListener("click", fn4);
-
+        document.getElementById("strict").addEventListener("click", fs);
 
 
         //----------------------------------------------//
@@ -198,9 +203,6 @@ document.getElementById("OnBtn").addEventListener("change", function(){
 
             if(JSON.stringify(store) === JSON.stringify(usr_str))
             {
-                console.log("correct");
-                console.log(usr_str);
-                console.log(store);
                 addMove();
             }
             else
@@ -209,7 +211,10 @@ document.getElementById("OnBtn").addEventListener("change", function(){
                 document.getElementById("count").innerHTML="!!";
                 if(strict_mode === true)
                 {
-                    startGame();
+                    strict_mode=false;
+                    // change-led -back
+		    document.getElementById("led").style.cssText="background-color: rgb(34, 34, 34)";
+                    timeouts.push(setTimeout(startGame,500));
                 }
                 else
                 {
@@ -253,7 +258,7 @@ document.getElementById("OnBtn").addEventListener("change", function(){
 
         }
         
-        //--------------------------------------------------------
+        //--------------------------------------------------------//
 
         addMove();
 
